@@ -374,7 +374,7 @@ class Stream(StreamT[T_co], Service):
                     # buffer while we read.
                     buffer_consuming = self.loop.create_future()
                     try:
-                        yield list(buffer)
+                        yield list(events)
                     finally:
                         buffer.clear()
                         for event in events:
