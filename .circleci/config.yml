@@ -1,0 +1,19 @@
+version: 2.1
+executors:
+  ubuntu:
+    machine:
+      image: ubuntu-2004:202010-01
+jobs:
+  publish:
+    executor: ubuntu
+    steps:
+      - checkout
+      - run:
+          name: Publish
+          command: |
+            ci/publish $GEMFURY_PUSH_TOKEN
+workflows:
+  version: 2
+  primary:
+    jobs:
+      - publish
