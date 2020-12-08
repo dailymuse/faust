@@ -92,9 +92,9 @@ please visit the :ref:`history` section.
   + Hisham Elsheshtawy (:github_user:`Sheshtawy`).
   + :github_user:`lsabi`.
 
-.. _version-1.10.3:
+.. _version-1.10.4:
 
-1.10.3
+1.10.4
 ======
 :release-date: 2020-02-14 4:27 P.M PST
 :release-by: Ask Solem (:github_user:`ask`)
